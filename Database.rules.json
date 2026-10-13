@@ -1,0 +1,12 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "boards": {
+      "$b": {
+        ".read": "auth != null",
+        ".write": "auth != null && $b.length <= 40"
+      }
+    }
+  }
+}
